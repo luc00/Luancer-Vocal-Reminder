@@ -1,0 +1,10 @@
+{
+  "name": "VoiceReminder",
+  "description": "Assistente vocale minimalista con nome Ester per gestire promemoria intelligenti.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
