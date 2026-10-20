@@ -212,10 +212,10 @@ export default function AuthAccessScreen({ onLoginSuccess, defaultEmail = 'lucqu
             {/* Subtle glow behind logo */}
             <div className="absolute -inset-2 bg-[#699a7e]/25 rounded-2xl blur-md group-hover:bg-[#699a7e]/40 transition duration-500" />
             
-            {/* Uploaded User Logo Image */}
+            {/* Uploaded User Logo Image con base dinamica per GitHub Pages */}
             <div className="relative p-2 rounded-2xl bg-[#1a2d22] border border-[#3e624c] shadow-lg overflow-hidden flex items-center justify-center">
               <img 
-                src="/assets/aistudio/logo_LUANCER_d035bfad.PNG" 
+                src={`${import.meta.env.BASE_URL}assets/aistudio/logo_LUANCER_d035bfad.PNG`} 
                 alt="LUANCER AND CO. - Logo" 
                 className="w-28 sm:w-32 h-auto object-contain rounded-xl drop-shadow-md hover:scale-105 transition-transform duration-300"
               />
@@ -459,3 +459,5 @@ export default function AuthAccessScreen({ onLoginSuccess, defaultEmail = 'lucqu
     </div>
   );
 }
+
+    
